@@ -5,11 +5,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
+var _sourceMapSupport = _interopRequireDefault(require("source-map-support"));
+
 var _plugin = require("../plugin.js");
 
 var _replaceVisitor = require("./replace-visitor.js");
-
-var _sourceMapSupport = _interopRequireDefault(require("source-map-support"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.default = void 0;
 
-var _plugin = require("./plugin.js");
-
 var _sourceMapSupport = _interopRequireDefault(require("source-map-support"));
+
+var _plugin = require("./plugin.js");
 
 var _visitor = require("./visitor.js");
 
