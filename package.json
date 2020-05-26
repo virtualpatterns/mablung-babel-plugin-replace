@@ -27,6 +27,7 @@
     "./visitor.js": "./distributable/library/visitor.js"
   },
   "license": "GPL-3.0+",
+  "main": "distributable/index.js",
   "name": "@virtualpatterns/mablung-babel-plugin-replace",
   "repository": {
     "type": "git",
