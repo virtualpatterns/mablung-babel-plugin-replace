@@ -1,5 +1,6 @@
-import { Plugin } from './plugin.js'
 import Source from 'source-map-support'
+
+import { Plugin } from './plugin.js'
 import { Visitor } from './visitor.js'
 
 Source.install({ 'environment': 'node', 'handleUncaughtExceptions': false, 'hookRequire': false })
