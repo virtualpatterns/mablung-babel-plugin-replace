@@ -77,6 +77,8 @@ class ReplaceVisitor extends Visitor {
           rule.replaceWith = Is.null(this._importIdentifier) ? rule.replaceWith : rule.replaceWith.replace(/__importIdentifier/gi, this._importIdentifier.name)
           rule.replaceWithNode = rule.replaceWithNode ?  rule.replaceWithNode : Parser.parseExpression(rule.replaceWith, rule.parserOption)
   
+          this._importIdentifier = null
+
         }
 
         path.replaceWith(rule.replaceWithNode)
