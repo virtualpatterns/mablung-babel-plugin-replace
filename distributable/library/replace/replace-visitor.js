@@ -76,6 +76,7 @@ class ReplaceVisitor extends _visitor.Visitor {
           });
           rule.replaceWith = _is.default.null(this._importIdentifier) ? rule.replaceWith : rule.replaceWith.replace(/__importIdentifier/gi, this._importIdentifier.name);
           rule.replaceWithNode = rule.replaceWithNode ? rule.replaceWithNode : Parser.parseExpression(rule.replaceWith, rule.parserOption);
+          this._importIdentifier = null;
         }
 
         path.replaceWith(rule.replaceWithNode);

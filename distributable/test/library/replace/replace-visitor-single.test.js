@@ -103,4 +103,4 @@ _ava.default.beforeEach(test => {
     'instanceOf': _replaceVisitorInvalidImportTypeError.ReplaceVisitorInvalidImportTypeError
   });
 });
-//# sourceMappingURL=replace-visitor.test.js.map
+//# sourceMappingURL=replace-visitor-single.test.js.map
