@@ -24,7 +24,8 @@
       "preLaunchTask": "build",
       "runtimeArgs": [
         "debug",
-        "--break"
+        "--break",
+        "${workspaceFolder}/distributable/test/library/replace/another-replace-visitor.test.js"
       ],
       "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/ava",
       "skipFiles": [
