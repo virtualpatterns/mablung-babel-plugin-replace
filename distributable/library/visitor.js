@@ -21,8 +21,8 @@ class Visitor {
   }
 
   onIdentifierNode()
-  /* path, state */
-  {// console.log(`Visitor.onIdentifierNode('${path.node.name}', state)`)
+  /* path, state, context */
+  {// console.log('Visitor.onIdentifierNode(path, state, context)')
   }
 
   onAfterNode()
