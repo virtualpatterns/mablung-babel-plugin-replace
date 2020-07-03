@@ -21,7 +21,7 @@ class Plugin {
       let visitorObject = {}
 
       nodeType.forEach((nodeType) => {
-        visitorObject[nodeType] = function(path, state) { visitorInstance[`on${PascalCase(nodeType)}Node`](path, state) }
+        visitorObject[nodeType] = function(path, state) { visitorInstance[`on${PascalCase(nodeType)}Node`](path, state, this) }
       })
 
       pluginObject.visitor = visitorObject
