@@ -29,9 +29,6 @@
   "license": "GPL-3.0+",
   "main": "distributable/index.js",
   "name": "@virtualpatterns/mablung-babel-plugin-replace",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/virtualpatterns/mablung-babel-plugin-replace"
