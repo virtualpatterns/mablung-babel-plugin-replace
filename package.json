@@ -61,7 +61,7 @@
     "push:20": "git push origin master",
     "push": "run-s --silent pre:push push:*"
   },
-  "version": "0.0.2-14",
+  "version": "0.0.2-15",
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.10.5",
