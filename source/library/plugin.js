@@ -1,4 +1,5 @@
 import * as ChangeCase from 'change-case'
+import Utility from 'util'
 
 const { pascalCase: PascalCase } = ChangeCase
 
@@ -7,7 +8,7 @@ class Plugin {
   static createPlugin(visitorClass) {
     // console.log(`Plugin.createPlugin(${visitorClass.name})`)
 
-    return function(babel) {
+    return Utility.deprecate(function (babel) {
       // console.log(`Plugin.createPlugin(${visitorClass.name})(babel)`)
 
       let visitorInstance = new visitorClass(babel)
@@ -28,7 +29,7 @@ class Plugin {
 
       return pluginObject
 
-    }
+    }, 'The package \'@virtualpatterns/mablung-babel-plugin-replace\' has been deprecated.  Use the \'@virtualpatterns/mablung-babel-plugin-replace-identifier\' package instead ... it offers the same functionality and options.')
 
   }
 
